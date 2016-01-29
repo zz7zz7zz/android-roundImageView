@@ -3,6 +3,11 @@ package com.open.image;
 import android.app.Activity;
 import android.os.Bundle;
 
+/**
+ * 
+ * @author Long
+ * 
+ */
 public class RoundImage3Activity extends Activity {
 
 	@Override

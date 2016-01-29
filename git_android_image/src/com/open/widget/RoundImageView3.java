@@ -19,7 +19,7 @@ import com.open.image.R;
 /**
  * 3.setXfermode
  * 
- * @author Administrator
+ * @author Long
  *
  */
 public class RoundImageView3 extends ImageView {

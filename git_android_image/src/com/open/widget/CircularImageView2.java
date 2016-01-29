@@ -14,7 +14,7 @@ import android.widget.ImageView;
 /**
  * 2.Path
  * 
- * @author Administrator
+ * @author Long
  *
  */
 public class CircularImageView2 extends ImageView {

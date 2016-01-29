@@ -15,7 +15,7 @@ import android.widget.ImageView;
 /**
  * 1.BitmapShader
  * 
- * @author Administrator
+ * @author Long
  *
  */
 public class CircularImageView extends ImageView {

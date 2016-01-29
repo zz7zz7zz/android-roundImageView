@@ -16,7 +16,7 @@ import com.open.image.R;
 /**
  * 2.Path
  * 
- * @author Administrator
+ * @author Long
  *
  */
 public class RoundImageView2 extends ImageView {

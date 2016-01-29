@@ -16,7 +16,7 @@ import android.widget.ImageView;
 /**
  * 3.setXfermode
  * 
- * @author Administrator
+ * @author Long
  *
  */
 public class CircularImageView3 extends ImageView {

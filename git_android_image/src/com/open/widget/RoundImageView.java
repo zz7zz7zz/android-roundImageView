@@ -19,7 +19,7 @@ import com.open.image.R;
 /**
  * 1.BitmapShader
  * 
- * @author Administrator
+ * @author Long
  *
  */
 public class RoundImageView extends ImageView {
