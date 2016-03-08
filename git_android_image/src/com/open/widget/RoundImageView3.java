@@ -103,7 +103,7 @@ public class RoundImageView3 extends ImageView {
 
 	@Override
 	protected void onDraw(Canvas canvas) {
-		super.onDraw(canvas);
+//		super.onDraw(canvas);
 		
 		Drawable mDrawable = getDrawable();
 		if (mDrawable == null)
@@ -120,8 +120,14 @@ public class RoundImageView3 extends ImageView {
         	return;
         }
         
-        int saveCount = canvas.getSaveCount();
-        canvas.save();
+        int saveCount = canvas.saveLayer(0, 0, mDrawable.getIntrinsicWidth(), mDrawable.getIntrinsicHeight(), null,
+                Canvas.MATRIX_SAVE_FLAG |
+                Canvas.CLIP_SAVE_FLAG |
+                Canvas.HAS_ALPHA_LAYER_SAVE_FLAG |
+                Canvas.FULL_COLOR_LAYER_SAVE_FLAG |
+                Canvas.CLIP_TO_LAYER_SAVE_FLAG);
+
+        mDrawable.draw(canvas);
         paint.setFilterBitmap(false);
         paint.setXfermode(mXfermode);
         canvas.drawBitmap(maskBitmap, null, mRoundRect, paint);
