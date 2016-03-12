@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
@@ -35,6 +36,7 @@ public class RoundImageView3 extends ImageView {
 	private int y_radius;
 	private int oldWidth;
 	private int oldHeight;
+	
 	
 	public RoundImageView3(Context context) {
 		super(context);
@@ -120,15 +122,22 @@ public class RoundImageView3 extends ImageView {
         	return;
         }
         
-        int saveCount = canvas.saveLayer(0, 0, mDrawable.getIntrinsicWidth(), mDrawable.getIntrinsicHeight(), null,
+        int saveCount = canvas.saveLayer(0, 0, getWidth(), getHeight(), null,
                 Canvas.MATRIX_SAVE_FLAG |
                 Canvas.CLIP_SAVE_FLAG |
                 Canvas.HAS_ALPHA_LAYER_SAVE_FLAG |
                 Canvas.FULL_COLOR_LAYER_SAVE_FLAG |
                 Canvas.CLIP_TO_LAYER_SAVE_FLAG);
 
-        mDrawable.draw(canvas);
-        paint.setFilterBitmap(false);
+         canvas.save();
+         Matrix mDrawMatrix = getImageMatrix();
+         if (mDrawMatrix != null)
+         {
+            canvas.concat(mDrawMatrix);
+         }
+         mDrawable.draw(canvas);
+         canvas.restore();
+
         paint.setXfermode(mXfermode);
         canvas.drawBitmap(maskBitmap, null, mRoundRect, paint);
         paint.setXfermode(null);
