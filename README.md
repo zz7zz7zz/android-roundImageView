@@ -1,8 +1,8 @@
 # android-Image
 ## 一、说明
 
-    1.圆角RoundImageView.</br>
-    1.圆形CircleImageView.</br>
+    1.圆角RoundImageView.
+    1.圆形CircleImageView.
     
 ## 二、效果展示 
 
