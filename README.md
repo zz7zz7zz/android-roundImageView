@@ -8,9 +8,9 @@
 
 圆角RoundImageView.
 
-<img src ="http://img.blog.csdn.net/20160128192112963" widht="360" height="640"/>
-<img src ="http://img.blog.csdn.net/20160129142249276" widht="360" height="640"/>
-<img src ="http://img.blog.csdn.net/20160128192319604" widht="360" height="640"/>
+<img src ="https://github.com/zz7zz7zz/android-roundImageView/blob/master/1.jpg" widht="360" height="640"/>
+<img src ="https://github.com/zz7zz7zz/android-roundImageView/blob/master/2.jpg" widht="360" height="640"/>
+<img src ="https://github.com/zz7zz7zz/android-roundImageView/blob/master/3.jpg" widht="360" height="640"/>
 
  圆形CircleImageView
  
