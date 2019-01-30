@@ -14,9 +14,9 @@
 
  圆形CircleImageView
  
-<img src ="http://img.blog.csdn.net/20160128192543235" widht="360" height="640"/>
-<img src ="http://img.blog.csdn.net/20160128194108099" widht="360" height="640"/>
-<img src ="http://img.blog.csdn.net/20160128194130550" widht="360" height="640"/>
+<img src ="https://github.com/zz7zz7zz/android-roundImageView/blob/master/2.1.jpg" widht="360" height="640"/>
+<img src ="https://github.com/zz7zz7zz/android-roundImageView/blob/master/2.2.jpg" widht="360" height="640"/>
+<img src ="https://github.com/zz7zz7zz/android-roundImageView/blob/master/2.3.jpg" widht="360" height="640"/>
 
 
 
